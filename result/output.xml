@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20181121 17:18:48.785">
+<suite id="s1" name="NotepadTest" source="C:\Users\anderson.benet\git\Test-desktop---robotframework\test\NotepadTest.robot">
+<test id="s1-t1" name="Windows Notepad Hello World">
+<kw name="Carrega diretório de imagens" library="NotepadResource">
+<kw name="Add Image Path" library="SikuliLibrary">
+<doc>Add image path</doc>
+<arguments>
+<arg>${image_dir}</arg>
+</arguments>
+<msg timestamp="20181121 17:18:51.575" level="INFO">Params: [C:\Users\anderson.benetgit\Test-desktop---robotframework\img]
+[error] ImagePath: add: not valid: C:\Users\anderson.benetgit\Test-desktop---robotframework\img</msg>
+<status status="PASS" starttime="20181121 17:18:51.565" endtime="20181121 17:18:51.576"></status>
+</kw>
+<status status="PASS" starttime="20181121 17:18:51.565" endtime="20181121 17:18:51.576"></status>
+</kw>
+<kw name="Abre o menu inicial do windows" library="NotepadResource">
+<kw name="Click" library="SikuliLibrary">
+<doc>Click image</doc>
+<arguments>
+<arg>start_windows.png</arg>
+</arguments>
+<msg timestamp="20181121 17:18:51.612" level="FAIL">Connection to remote server broken: Remote end closed connection without response</msg>
+<status status="FAIL" starttime="20181121 17:18:51.576" endtime="20181121 17:18:51.612"></status>
+</kw>
+<status status="FAIL" starttime="20181121 17:18:51.576" endtime="20181121 17:18:51.612"></status>
+</kw>
+<status status="FAIL" starttime="20181121 17:18:51.564" endtime="20181121 17:18:51.613" critical="yes">Connection to remote server broken: Remote end closed connection without response</status>
+</test>
+<doc>Sikuli Library Demo</doc>
+<status status="FAIL" starttime="20181121 17:18:48.787" endtime="20181121 17:18:51.615"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="NotepadTest">NotepadTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
