@@ -1,44 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20181121 17:18:48.785">
-<suite id="s1" name="NotepadTest" source="C:\Users\anderson.benet\git\Test-desktop---robotframework\test\NotepadTest.robot">
+<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20181123 14:26:15.148">
+<suite id="s1" name="NotepadTest" source="C:\Users\anderson.benet\git\desktop_robotframework\test\NotepadTest.robot">
 <test id="s1-t1" name="Windows Notepad Hello World">
-<kw name="Carrega diretório de imagens" library="NotepadResource">
+<kw name="Carrega diretório de imagens" library="NotepadResource" type="setup">
 <kw name="Add Image Path" library="SikuliLibrary">
 <doc>Add image path</doc>
 <arguments>
-<arg>${image_dir}</arg>
+<arg>${IMAGE_DIR}</arg>
 </arguments>
-<msg timestamp="20181121 17:18:51.575" level="INFO">Params: [C:\Users\anderson.benetgit\Test-desktop---robotframework\img]
-[error] ImagePath: add: not valid: C:\Users\anderson.benetgit\Test-desktop---robotframework\img</msg>
-<status status="PASS" starttime="20181121 17:18:51.565" endtime="20181121 17:18:51.576"></status>
+<msg timestamp="20181123 14:26:18.037" level="INFO">Params: [C:\Users\anderson.benet\git\desktop_robotframework\resource\img]</msg>
+<status status="PASS" starttime="20181123 14:26:18.027" endtime="20181123 14:26:18.037"></status>
 </kw>
-<status status="PASS" starttime="20181121 17:18:51.565" endtime="20181121 17:18:51.576"></status>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${IMAGE_DIR}</arg>
+</arguments>
+<msg timestamp="20181123 14:26:18.038" level="INFO">C:\Users\anderson.benet\git\desktop_robotframework\resource\img</msg>
+<status status="PASS" starttime="20181123 14:26:18.037" endtime="20181123 14:26:18.038"></status>
+</kw>
+<status status="PASS" starttime="20181123 14:26:18.027" endtime="20181123 14:26:18.038"></status>
 </kw>
 <kw name="Abre o menu inicial do windows" library="NotepadResource">
-<kw name="Click" library="SikuliLibrary">
-<doc>Click image</doc>
+<kw name="Double Click" library="SikuliLibrary">
+<doc>Double click image</doc>
 <arguments>
-<arg>start_windows.png</arg>
+<arg>windows.png</arg>
 </arguments>
-<msg timestamp="20181121 17:18:51.612" level="FAIL">Connection to remote server broken: Remote end closed connection without response</msg>
-<status status="FAIL" starttime="20181121 17:18:51.576" endtime="20181121 17:18:51.612"></status>
+<msg timestamp="20181123 14:26:19.210" level="INFO">Params: [windows.png]</msg>
+<msg timestamp="20181123 14:26:19.210" level="INFO" html="yes">&lt;img src='sikuli_captured/sikuliximage-1542990378364.png'/&gt;
+[log] DOUBLE CLICK on L(38,1050)@S(0)[0,0 1920x1080] (548 msec)</msg>
+<status status="PASS" starttime="20181123 14:26:18.038" endtime="20181123 14:26:19.210"></status>
 </kw>
-<status status="FAIL" starttime="20181121 17:18:51.576" endtime="20181121 17:18:51.612"></status>
+<status status="PASS" starttime="20181123 14:26:18.038" endtime="20181123 14:26:19.210"></status>
 </kw>
-<status status="FAIL" starttime="20181121 17:18:51.564" endtime="20181121 17:18:51.613" critical="yes">Connection to remote server broken: Remote end closed connection without response</status>
+<kw name="Stop Remote Server" library="SikuliLibrary" type="teardown">
+<doc>Stops the remote server.</doc>
+<msg timestamp="20181123 14:26:19.230" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20181123 14:26:19.212" endtime="20181123 14:26:19.230"></status>
+</kw>
+<status status="PASS" starttime="20181123 14:26:18.026" endtime="20181123 14:26:19.233" critical="yes"></status>
 </test>
-<doc>Sikuli Library Demo</doc>
-<status status="FAIL" starttime="20181121 17:18:48.787" endtime="20181121 17:18:51.615"></status>
+<status status="PASS" starttime="20181123 14:26:15.150" endtime="20181123 14:26:19.246"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="NotepadTest">NotepadTest</stat>
+<stat pass="1" fail="0" id="s1" name="NotepadTest">NotepadTest</stat>
 </suite>
 </statistics>
 <errors>
