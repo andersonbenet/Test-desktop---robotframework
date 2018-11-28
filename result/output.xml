@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20181123 14:26:15.148">
+<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20181126 11:55:23.034">
 <suite id="s1" name="NotepadTest" source="C:\Users\anderson.benet\git\desktop_robotframework\test\NotepadTest.robot">
 <test id="s1-t1" name="Windows Notepad Hello World">
 <kw name="Carrega diretório de imagens" library="NotepadResource" type="setup">
@@ -8,18 +8,18 @@
 <arguments>
 <arg>${IMAGE_DIR}</arg>
 </arguments>
-<msg timestamp="20181123 14:26:18.037" level="INFO">Params: [C:\Users\anderson.benet\git\desktop_robotframework\resource\img]</msg>
-<status status="PASS" starttime="20181123 14:26:18.027" endtime="20181123 14:26:18.037"></status>
+<msg timestamp="20181126 11:55:25.934" level="INFO">Params: [C:\Users\anderson.benet\git\desktop_robotframework\resource\img]</msg>
+<status status="PASS" starttime="20181126 11:55:25.920" endtime="20181126 11:55:25.934"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${IMAGE_DIR}</arg>
 </arguments>
-<msg timestamp="20181123 14:26:18.038" level="INFO">C:\Users\anderson.benet\git\desktop_robotframework\resource\img</msg>
-<status status="PASS" starttime="20181123 14:26:18.037" endtime="20181123 14:26:18.038"></status>
+<msg timestamp="20181126 11:55:25.934" level="INFO">C:\Users\anderson.benet\git\desktop_robotframework\resource\img</msg>
+<status status="PASS" starttime="20181126 11:55:25.934" endtime="20181126 11:55:25.934"></status>
 </kw>
-<status status="PASS" starttime="20181123 14:26:18.027" endtime="20181123 14:26:18.038"></status>
+<status status="PASS" starttime="20181126 11:55:25.919" endtime="20181126 11:55:25.935"></status>
 </kw>
 <kw name="Abre o menu inicial do windows" library="NotepadResource">
 <kw name="Double Click" library="SikuliLibrary">
@@ -27,21 +27,21 @@
 <arguments>
 <arg>windows.png</arg>
 </arguments>
-<msg timestamp="20181123 14:26:19.210" level="INFO">Params: [windows.png]</msg>
-<msg timestamp="20181123 14:26:19.210" level="INFO" html="yes">&lt;img src='sikuli_captured/sikuliximage-1542990378364.png'/&gt;
-[log] DOUBLE CLICK on L(38,1050)@S(0)[0,0 1920x1080] (548 msec)</msg>
-<status status="PASS" starttime="20181123 14:26:18.038" endtime="20181123 14:26:19.210"></status>
+<msg timestamp="20181126 11:55:27.247" level="INFO">Params: [windows.png]</msg>
+<msg timestamp="20181126 11:55:27.247" level="INFO" html="yes">&lt;img src='sikuli_captured/sikuliximage-1543240526360.png'/&gt;
+[log] DOUBLE CLICK on L(38,1050)@S(0)[0,0 1920x1080] (574 msec)</msg>
+<status status="PASS" starttime="20181126 11:55:25.935" endtime="20181126 11:55:27.249"></status>
 </kw>
-<status status="PASS" starttime="20181123 14:26:18.038" endtime="20181123 14:26:19.210"></status>
+<status status="PASS" starttime="20181126 11:55:25.935" endtime="20181126 11:55:27.249"></status>
 </kw>
 <kw name="Stop Remote Server" library="SikuliLibrary" type="teardown">
 <doc>Stops the remote server.</doc>
-<msg timestamp="20181123 14:26:19.230" level="INFO">Robot Framework remote server stopping</msg>
-<status status="PASS" starttime="20181123 14:26:19.212" endtime="20181123 14:26:19.230"></status>
+<msg timestamp="20181126 11:55:27.261" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20181126 11:55:27.256" endtime="20181126 11:55:27.261"></status>
 </kw>
-<status status="PASS" starttime="20181123 14:26:18.026" endtime="20181123 14:26:19.233" critical="yes"></status>
+<status status="PASS" starttime="20181126 11:55:25.919" endtime="20181126 11:55:27.269" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20181123 14:26:15.150" endtime="20181123 14:26:19.246"></status>
+<status status="PASS" starttime="20181126 11:55:23.036" endtime="20181126 11:55:27.273"></status>
 </suite>
 <statistics>
 <total>
