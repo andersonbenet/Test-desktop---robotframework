@@ -1,47 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20181126 11:55:23.034">
+<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20181130 16:43:15.259">
 <suite id="s1" name="NotepadTest" source="C:\Users\anderson.benet\git\desktop_robotframework\test\NotepadTest.robot">
 <test id="s1-t1" name="Windows Notepad Hello World">
 <kw name="Carrega diretório de imagens" library="NotepadResource" type="setup">
 <kw name="Add Image Path" library="SikuliLibrary">
 <doc>Add image path</doc>
 <arguments>
-<arg>${IMAGE_DIR}</arg>
+<arg>${image_dir}</arg>
 </arguments>
-<msg timestamp="20181126 11:55:25.934" level="INFO">Params: [C:\Users\anderson.benet\git\desktop_robotframework\resource\img]</msg>
-<status status="PASS" starttime="20181126 11:55:25.920" endtime="20181126 11:55:25.934"></status>
+<msg timestamp="20181130 16:43:18.566" level="INFO">Params: [C:\Users\anderson.benet\git\desktop_robotframework\resource\img]</msg>
+<status status="PASS" starttime="20181130 16:43:18.556" endtime="20181130 16:43:18.566"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>${IMAGE_DIR}</arg>
+<arg>${image_dir}</arg>
 </arguments>
-<msg timestamp="20181126 11:55:25.934" level="INFO">C:\Users\anderson.benet\git\desktop_robotframework\resource\img</msg>
-<status status="PASS" starttime="20181126 11:55:25.934" endtime="20181126 11:55:25.934"></status>
+<msg timestamp="20181130 16:43:18.567" level="INFO">C:\Users\anderson.benet\git\desktop_robotframework\resource\img</msg>
+<status status="PASS" starttime="20181130 16:43:18.566" endtime="20181130 16:43:18.567"></status>
 </kw>
-<status status="PASS" starttime="20181126 11:55:25.919" endtime="20181126 11:55:25.935"></status>
+<status status="PASS" starttime="20181130 16:43:18.556" endtime="20181130 16:43:18.567"></status>
 </kw>
 <kw name="Abre o menu inicial do windows" library="NotepadResource">
 <kw name="Double Click" library="SikuliLibrary">
 <doc>Double click image</doc>
 <arguments>
-<arg>windows.png</arg>
+<arg>firefox_start.png</arg>
 </arguments>
-<msg timestamp="20181126 11:55:27.247" level="INFO">Params: [windows.png]</msg>
-<msg timestamp="20181126 11:55:27.247" level="INFO" html="yes">&lt;img src='sikuli_captured/sikuliximage-1543240526360.png'/&gt;
-[log] DOUBLE CLICK on L(38,1050)@S(0)[0,0 1920x1080] (574 msec)</msg>
-<status status="PASS" starttime="20181126 11:55:25.935" endtime="20181126 11:55:27.249"></status>
+<msg timestamp="20181130 16:43:19.785" level="INFO">Params: [firefox_start.png]</msg>
+<msg timestamp="20181130 16:43:19.785" level="INFO" html="yes">&lt;img src='sikuli_captured/sikuliximage-1543603398970.png'/&gt;
+[log] DOUBLE CLICK on L(283,518)@S(0)[0,0 1920x1080] (549 msec)</msg>
+<status status="PASS" starttime="20181130 16:43:18.568" endtime="20181130 16:43:19.785"></status>
 </kw>
-<status status="PASS" starttime="20181126 11:55:25.935" endtime="20181126 11:55:27.249"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${wait}</arg>
+</arguments>
+<msg timestamp="20181130 16:43:29.786" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20181130 16:43:19.785" endtime="20181130 16:43:29.786"></status>
+</kw>
+<kw name="Input Text" library="SikuliLibrary">
+<doc>Input text. Image could be empty</doc>
+<arguments>
+<arg>firefox_search.png</arg>
+<arg>Hello World</arg>
+</arguments>
+<msg timestamp="20181130 16:43:31.390" level="INFO">Params: [firefox_search.png, Hello World]
+Input Text:
+Hello World</msg>
+<msg timestamp="20181130 16:43:31.390" level="INFO" html="yes">&lt;img src='sikuli_captured/sikuliximage-1543603410052.png'/&gt;
+[log] CLICK on L(980,79)@S(0)[0,0 1920x1080] (521 msec)
+[log]  TYPE "Hello World"</msg>
+<status status="PASS" starttime="20181130 16:43:29.786" endtime="20181130 16:43:31.390"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${wait}</arg>
+</arguments>
+<msg timestamp="20181130 16:43:41.391" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20181130 16:43:31.390" endtime="20181130 16:43:41.391"></status>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<doc>Click image</doc>
+<arguments>
+<arg>firefox_search_click</arg>
+</arguments>
+<msg timestamp="20181130 16:43:42.417" level="INFO">Params: [firefox_search_click]</msg>
+<msg timestamp="20181130 16:43:42.418" level="INFO" html="yes">&lt;img src='sikuli_captured/sikuliximage-1543603421651.png'/&gt;
+[log] CLICK on L(1557,79)@S(0)[0,0 1920x1080] (523 msec)</msg>
+<status status="PASS" starttime="20181130 16:43:41.391" endtime="20181130 16:43:42.418"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${wait}</arg>
+</arguments>
+<msg timestamp="20181130 16:43:52.419" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20181130 16:43:42.418" endtime="20181130 16:43:52.419"></status>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<doc>Click image</doc>
+<arguments>
+<arg>firefox_close.png</arg>
+</arguments>
+<msg timestamp="20181130 16:43:53.471" level="INFO">Params: [firefox_close.png]</msg>
+<msg timestamp="20181130 16:43:53.471" level="INFO" html="yes">&lt;img src='sikuli_captured/sikuliximage-1543603432700.png'/&gt;
+[log] CLICK on L(1886,24)@S(0)[0,0 1920x1080] (524 msec)</msg>
+<status status="PASS" starttime="20181130 16:43:52.419" endtime="20181130 16:43:53.471"></status>
+</kw>
+<status status="PASS" starttime="20181130 16:43:18.568" endtime="20181130 16:43:53.472"></status>
 </kw>
 <kw name="Stop Remote Server" library="SikuliLibrary" type="teardown">
 <doc>Stops the remote server.</doc>
-<msg timestamp="20181126 11:55:27.261" level="INFO">Robot Framework remote server stopping</msg>
-<status status="PASS" starttime="20181126 11:55:27.256" endtime="20181126 11:55:27.261"></status>
+<msg timestamp="20181130 16:43:53.498" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20181130 16:43:53.495" endtime="20181130 16:43:53.498"></status>
 </kw>
-<status status="PASS" starttime="20181126 11:55:25.919" endtime="20181126 11:55:27.269" critical="yes"></status>
+<status status="PASS" starttime="20181130 16:43:18.556" endtime="20181130 16:43:53.502" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20181126 11:55:23.036" endtime="20181126 11:55:27.273"></status>
+<status status="PASS" starttime="20181130 16:43:15.261" endtime="20181130 16:43:53.504"></status>
 </suite>
 <statistics>
 <total>
