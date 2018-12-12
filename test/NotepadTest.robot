@@ -6,5 +6,6 @@ Resource    ../resource/NotepadResource.robot
 
 
 *** Test Case ***
-Windows Notepad Hello World
-  Abre o menu inicial do windows
+TC001 - Install Portosis módulo Cobrança
+    Realizar download do módulo cobrança
+    # Realizar login no módulo cobrança  teste  123
