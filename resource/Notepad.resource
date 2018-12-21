@@ -1,8 +1,11 @@
 *** Settings ***
 Library  SikuliLibrary
+Library  SeleniumLibrary
 
 
 *** Variables ***
+${url}=  http://10.10.30.5/portosisapp/
+${browser}=  chrome
 ${image_dir}=  ${CURDIR}\\img
 ${wait}=  5
 
@@ -40,8 +43,29 @@ Realizar download do módulo Cobrança
 
   Set timeout	 20
   Click  portosis_cobranca_run.png
-  Sleep  10
-  Click  entrar_login.png
+
+
+Acessar page portosis para download do módulo cobrança
+    Open Browser  ${url}  ${browser}
+    Maximize Browser Window
+
+Download do módulo cobrança
+    Sleep  ${wait}
+    Click  link_download_mod_cobranca.png
+    Sleep  ${wait}
+    Click  btn_download_mod_cobranca_manter.png
+    Sleep  ${wait}
+    Click  run_mod_cobranca.png
+    Sleep  ${wait}
+    Click  btn_mod_cobranca_run.png
+
+Testar condicao
+    @{list}    Create List    Java    Ruby    Python
+
+    FOR    ${item}  IN  @{list}
+        Log  ${item}
+    END
+
 
 # Realizar login no módulo cobrança
 #   [Arguments]  ${user}  ${password}
